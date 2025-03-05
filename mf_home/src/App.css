@@ -1,0 +1,29 @@
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.c-princ{
+  
+}
+.nav-vertical{
+    background-color: #1f6db2;
+    color: #fff;
+    height: calc(100vh - 40px) ;
+}
+
+.nav-vertical li a{
+    color: #fff !important;
+}
+
+.footer_p{
+    height: 80px;
+    background-color: #d1d1d1;
+}
+
+.boody_p{
+
+    background-color: #f3f3f3;
+    height: calc(100vh - 120px);
+
+}
