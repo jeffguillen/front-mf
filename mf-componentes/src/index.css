@@ -1,0 +1,54 @@
+.camp_pac{
+    margin-top: 25px;
+    color: #1977d6;
+}
+
+.input_search{
+    width: 350px;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ebebeb;
+    display:block;
+    position: relative;
+}
+
+.input_search:focus {
+    border: none;
+  }
+
+  .btn_search{
+    position: relative;
+    left: 310px;
+    top: -38px;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    background-color: #57c022;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 5px
+  }
+
+  .cl_span{
+    display: block;
+    color: #707070;
+    margin-bottom: 20px;
+  }
+
+  .accordion-flush>.accordion-item>.accordion-header .accordion-button, .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed {
+    background-color: #1977d6;
+    width: 99%;
+    color: #fff;
+    border-radius: 10px;
+    margin: 5px;
+  }
+
+  .c_paciente b{
+    color: #1977d6;
+  }
+  .c_paciente button{
+    background-color: #a14141;
+    border-radius: 7px;
+    border: none;
+    color: #fff;
+  }
