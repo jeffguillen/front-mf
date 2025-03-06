@@ -33,8 +33,6 @@ if(res.data.rows.token)
 
       localStorage.setItem("perfil", JSON.stringify(perfiles.data));
 
-   //   console.log("perfiles", perfiles.data);
-
    setTimeout(() => {
     window.location.href = "/dashboard";
    }, 300);
@@ -42,31 +40,36 @@ if(res.data.rows.token)
     
   }
 
-console.log("res122333", res.data.rows.token);
-console.log("state", user);
-
 
 }
 
 return (
-<form>
 
-<h3>Login</h3>
+  <div className="container login-container">
+  <div className="row">
+      <div className="col-md-6 login-form-1">
+          <h3>Iniciar sesión</h3>
+          <form>
+              <div className="form-group" style={{ marginTop:'12px' }}>
+                  <input type="text" className="form-control" placeholder="Ingresa tu usuario" value="" />
+              </div>
+              <div className="form-group" style={{ marginTop:'12px' }} >
+                  <input type="password" className="form-control" placeholder="Ingresa tu contraseña" value="" />
+              </div>
+              <div className="form-group" style={{ marginTop:'12px' }}>
+                  <input type="submit" className="btnSubmit" onClick={login} value="Ingresar" />
+              </div>
+              <div className="form-group">
+              </div>
+          </form>
+      </div>
+      <div className="col-md-6 login-form-2">
+          <h3>LOGO</h3>
+          
+      </div>
+  </div>
+</div>
 
-    <div className="form-group" style={{marginTop:'10px'}}>
-      
-        <label>Usuario</label>
-        <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-            placeholder="Usuario" />
- 
-    </div>
-    <div className="form-group" style={{marginTop:'10px'}}>
-        <label>Password</label>
-        <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
-    </div>
-
-    <button type="submit" onClick={login} className="btn btn-primary" style={{marginTop:'10px'}} >Submit</button>
-</form>
 )
 
 }
